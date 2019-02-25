@@ -15,7 +15,7 @@ class Home extends Component {
   state = {
     sideVideos: [],
     currentVidId: "",
-    mainVideo: [],
+    mainVideo: null,
     comments: [],
   }
 
@@ -54,7 +54,7 @@ class Home extends Component {
 }
 
   render() {
-    if (this.state.mainVideo === []) return "Loading page...";
+    if (this.state.mainVideo === null) return "Loading page...";
     return (
       <div>
         <Video mainVideo={this.state.mainVideo}/>
