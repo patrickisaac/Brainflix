@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+@import 'variables';
+
+body {
+  font-family: "Avenir Next"
+}
+
+@media (min-width: 1440px) {
+  .video__section {
+    background-color: black;
+    margin: auto;
+    text-align: center;
+
+    .currentVideo {
+      width: 944px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .video__section {
+    background-color: black;
+    margin: auto;
+    text-align: center;
+
+    .currentVideo {
+      width: 700px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .video__section {
+    background-color: black;
+    margin: auto;
+    text-align: center;
+
+    .currentVideo {
+      width: 100%;
+    }
+  } 
+}

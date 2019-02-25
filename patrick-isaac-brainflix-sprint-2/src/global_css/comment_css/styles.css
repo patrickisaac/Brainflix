@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+@media (min-width: 1440px) {
+  .comment__section {
+    padding-top: 3%;
+    margin-left: 4%;
+  }
+  .comment__section .comment__nums {
+    font-size: 0.7rem;
+    color: #323232;
+  }
+  .comment__section .comment__container {
+    margin-left: -1.5%;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .comment__section .comment__container .comment__picture {
+    margin-top: 6.5%;
+  }
+  .comment__section .comment__container .comment__picture img {
+    width: 80px;
+    -webkit-clip-path: circle(35%);
+            clip-path: circle(35%);
+  }
+  .comment__section .comment__container .comment__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    font-size: 14px;
+    font-weight: 550;
+    color: #AFAFAF;
+    margin-top: 2%;
+  }
+  .comment__section .comment__container .comment__form p {
+    margin-bottom: -20px;
+  }
+  .comment__section .comment__container .comment__form .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .comment__section .comment__container .comment__form .comments textarea {
+    color: #323232;
+    border-radius: 4px;
+    border: 1.5px solid #E1E1E1;
+    padding: 15px 0;
+    padding-left: 5px;
+    padding-right: 30px;
+    height: 15px;
+    font-family: "Avenir Next";
+    font-size: 16px;
+  }
+  .comment__section .comment__container .comment__form .comments button {
+    font-family: "Avenir Next";
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+  .posted__section {
+    padding: 4% 0;
+  }
+  .posted__section .posted__comments {
+    border-top: 1.2px solid #E1E1E1;
+    border-bottom: 1.2px solid #E1E1E1;
+    padding-bottom: 1%;
+    width: 100%;
+  }
+  .posted__section .posted__comments .name__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .posted__section .posted__comments .name__container .profile {
+    background: #E1E1E1;
+    border-radius: 50%;
+    width: 80px;
+    height: 45px;
+    margin-bottom: 1%;
+    margin-top: 4%;
+  }
+  .posted__section .posted__comments .name__container .user__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 3%;
+  }
+  .posted__section .posted__comments .name__container .user__info .name {
+    color: #323232;
+    padding-top: 2%;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .posted__section .posted__comments .name__container .user__info .date {
+    color: #AFAFAF;
+    margin-bottom: 1%;
+    font-size: 0.9rem;
+    margin-left: 3%;
+  }
+  .posted__section .posted__comments .name__container .user__info .comment {
+    color: #323232;
+    margin-top: 0;
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .comment__section {
+    padding-top: 3%;
+    margin-left: 4%;
+  }
+  .comment__section .comment__nums {
+    font-size: 0.7rem;
+    color: #323232;
+  }
+  .comment__section .comment__container {
+    margin-left: -1.5%;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .comment__section .comment__container .comment__picture {
+    margin-top: 6.5%;
+  }
+  .comment__section .comment__container .comment__picture img {
+    width: 75px;
+    -webkit-clip-path: circle(35%);
+            clip-path: circle(35%);
+  }
+  .comment__section .comment__container .comment__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    font-size: 14px;
+    font-weight: 550;
+    color: #AFAFAF;
+    margin-top: 2%;
+  }
+  .comment__section .comment__container .comment__form p {
+    margin-bottom: -20px;
+  }
+  .comment__section .comment__container .comment__form .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comment__section .comment__container .comment__form .comments textarea {
+    font-family: "Avenir Next";
+    color: #323232;
+    border-radius: 4px;
+    border: 1.5px solid #E1E1E1;
+    padding: 15px 0;
+    padding-left: 12px;
+    padding-right: 35px;
+    margin-top: 25px;
+    height: 10px;
+    font-family: "Avenir Next";
+  }
+  .comment__section .comment__container .comment__form .comments button {
+    font-family: "Avenir Next";
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4%;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .posted__section {
+    padding: 4% 0;
+  }
+  .posted__section .posted__comments {
+    border-top: 1.2px solid #E1E1E1;
+    border-bottom: 1.2px solid #E1E1E1;
+    padding-bottom: 1%;
+    width: 95%;
+  }
+  .posted__section .posted__comments .name__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .posted__section .posted__comments .name__container .profile {
+    background: #E1E1E1;
+    border-radius: 50%;
+    width: 90px;
+    height: 40px;
+    margin-bottom: 1%;
+    margin-top: 4%;
+  }
+  .posted__section .posted__comments .name__container .user__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 3%;
+  }
+  .posted__section .posted__comments .name__container .user__info .name {
+    color: #323232;
+    padding-top: 2%;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .posted__section .posted__comments .name__container .user__info .date {
+    color: #AFAFAF;
+    margin-bottom: 2%;
+    font-size: 0.9rem;
+    margin-left: 3%;
+  }
+  .posted__section .posted__comments .name__container .user__info .comment {
+    color: #323232;
+    margin-top: 0;
+    width: 95%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .comment__section {
+    padding-top: 3%;
+    margin-left: 4%;
+  }
+  .comment__section .comment__nums {
+    font-size: 0.7rem;
+    color: #323232;
+  }
+  .comment__section .comment__container {
+    margin-left: -4%;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .comment__section .comment__container .comment__picture {
+    margin-top: 12%;
+  }
+  .comment__section .comment__container .comment__picture img {
+    width: 75px;
+    -webkit-clip-path: circle(35%);
+            clip-path: circle(35%);
+  }
+  .comment__section .comment__container .comment__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    font-size: 14px;
+    font-weight: 550;
+    color: #AFAFAF;
+    margin-top: 2%;
+  }
+  .comment__section .comment__container .comment__form p {
+    margin-bottom: 5px;
+  }
+  .comment__section .comment__container .comment__form .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .comment__section .comment__container .comment__form .comments textarea {
+    font-family: "Avenir Next";
+    color: #323232;
+    border-radius: 4px;
+    border: 1.5px solid #E1E1E1;
+    padding: 15px;
+    width: 80%;
+    height: 40%;
+  }
+  .comment__section .comment__container .comment__form .comments button {
+    font-family: "Avenir Next";
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4%;
+    width: 95%;
+    margin-left: -1px;
+  }
+  .posted__section {
+    padding: 6% 0;
+  }
+  .posted__section .posted__comments {
+    border-top: 1.2px solid #E1E1E1;
+    border-bottom: 1.2px solid #E1E1E1;
+    padding-bottom: 1%;
+    width: 95%;
+  }
+  .posted__section .posted__comments .name__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .posted__section .posted__comments .name__container .profile {
+    background: #E1E1E1;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 1%;
+    margin-top: 5%;
+  }
+  .posted__section .posted__comments .name__container .user__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 3%;
+    width: 95%;
+  }
+  .posted__section .posted__comments .name__container .user__info .name {
+    color: #323232;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .posted__section .posted__comments .name__container .user__info .date {
+    color: #AFAFAF;
+    margin-bottom: 2%;
+    font-size: 0.9rem;
+    margin-left: 25px;
+  }
+  .posted__section .posted__comments .name__container .user__info .comment {
+    color: #323232;
+    margin-top: 0;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
