@@ -5,7 +5,7 @@ class Video extends React.Component {
   render() {
     return (
       <div className="video__section">
-        <video className="currentVideo" controls poster={this.props.currentVidImg}></video>
+        <video className="currentVideo" controls src={this.props.currentVid + "?api_key=4abc64a1-403f-4d37-8ad8-5c49d60737b0"}></video>
       </div>
     )
   }
