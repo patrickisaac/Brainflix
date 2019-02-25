@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+@media (min-width: 1440px) {
+  .videoArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .sideVideo__desktop {
+    margin-top: -302px;
+    border-left: 1px solid #E1E1E1;
+  }
+}
+/*# sourceMappingURL=App.css.map */
