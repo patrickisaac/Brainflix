@@ -7,7 +7,7 @@ import axios from 'axios'
 import './App.css'
 
 
-const api_key = "?api_key=4abc64a1-403f-4d37-8ad8-5c49d60737b0"
+const api_key = "4abc64a1-403f-4d37-8ad8-5c49d60737b0"
 const url = `https://project-2-api.herokuapp.com/videos?api_key=${api_key}`
 const mainVideoUrl = id => `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`
 
@@ -15,7 +15,6 @@ class Home extends Component {
   state = {
     sideVideos: [],
     currentVidId: "",
-    currentVid: [],
     mainVideo: [],
     comments: [],
   }
@@ -33,7 +32,6 @@ class Home extends Component {
         axios.get(mainVideoUrl(this.state.currentVidId))
         .then(response => {
           this.setState({
-              currentVid: response.data.video,
               mainVideo: response.data,
               comments: response.data.comments
             })
@@ -48,7 +46,6 @@ class Home extends Component {
       .then(response => {
         console.log(this.props.match.params.id)
         this.setState({
-          currentVid: response.data.video,
           mainVideo: response.data,
           comments: response.data.comments
         })
@@ -57,9 +54,10 @@ class Home extends Component {
 }
 
   render() {
+    if (this.state.mainVideo === []) return "Loading page...";
     return (
       <div>
-        <Video currentVid={this.state.currentVid} api_key={api_key}/>
+        <Video mainVideo={this.state.mainVideo}/>
         <div className="videoArea">
           <div className="video__comments__area">
           <VideoInfo mainVideo={this.state.mainVideo}/>
