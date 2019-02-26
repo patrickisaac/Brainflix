@@ -2,9 +2,6 @@ import React from 'react'
 import '../global_css/nav_css/styles.css';
 import { Link } from 'react-router-dom'
 
-
-
-
 class Nav extends React.Component {
   render() {
     return (

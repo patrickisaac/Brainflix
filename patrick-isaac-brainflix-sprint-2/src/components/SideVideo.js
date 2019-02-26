@@ -2,7 +2,6 @@ import React from 'react'
 import '../global_css/sideVideo_css/styles.css'
 import { Link } from 'react-router-dom'
 
-
 class SideVideo extends React.Component {
   render() {
     const sideVideoList = this.props.sideVideos.map((sideVideo, id) => {

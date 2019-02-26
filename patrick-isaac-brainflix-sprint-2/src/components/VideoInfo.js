@@ -7,7 +7,6 @@ const date = (d) => {
 
 class VideoInfo extends React.Component {
   render() {
-
     return (
       <div className="container">
         <h1 className="video__title">{this.props.mainVideo.title}</h1>
