@@ -60,10 +60,9 @@ body {
     color: #323232;
     border-radius: 4px;
     border: 1.5px solid #E1E1E1;
-    padding: 15px 0;
-    padding-left: 5px;
-    padding-right: 30px;
+    padding: 2%;
     height: 15px;
+    width: 600px;
     font-family: "Avenir Next";
     font-size: 16px;
   }
@@ -188,11 +187,10 @@ body {
     color: #323232;
     border-radius: 4px;
     border: 1.5px solid #E1E1E1;
-    padding: 15px 0;
-    padding-left: 12px;
-    padding-right: 35px;
+    padding: 2%;
     margin-top: 25px;
-    height: 10px;
+    height: 15px;
+    width: 450px;
     font-family: "Avenir Next";
   }
   .comment__section .comment__container .comment__form .comments button {
