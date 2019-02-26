@@ -30,17 +30,17 @@ class Home extends Component {
         axios.get(mainVideoUrl(this.state.currentVidId))
         .then(response => {
           this.setState({
-              mainVideo: response.data,
-              comments: response.data.comments
-            })
+            mainVideo: response.data,
+            comments: response.data.comments
           })
+        })
       })
   }
 
   componentDidUpdate(prevProps) {
     if(this.props.match.params.id !== prevProps.match.params.id) {
     axios.get(mainVideoUrl(this.props.match.params.id))
-      .then(response => {
+    .then(response => {
         this.setState({
           mainVideo: response.data,
           comments: response.data.comments

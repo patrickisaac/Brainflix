@@ -5,7 +5,6 @@ class Video extends React.Component {
   componentDidUpdate() {
     this.video.load()
   }
-  
   render() {
     return (
       <div className="video__section">
