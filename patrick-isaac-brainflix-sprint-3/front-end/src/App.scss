@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+// VARIABLES // 
+$black: #323232;
+$silver: #AFAFAF;
+$albaster: #FAFAFA;
+$white: #FFFFFF;
+$mercury: #E1E1E1;
+$blue: #0095FF;
+$darkBlue: #0065AD;
+
+body {
+  font-family: "Avenir Next"
+}
+
+@media (min-width: 1440px) {
+  .videoArea {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideVideo__desktop {
+    border-left: 1px solid $mercury;
+    margin-right: 10%;
+  }
+
+}

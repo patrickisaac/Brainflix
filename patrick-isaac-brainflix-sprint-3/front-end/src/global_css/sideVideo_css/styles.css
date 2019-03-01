@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+@media (min-width: 1440px) {
+  .nextVideos {
+    margin-left: 4%;
+    width: 100%;
+  }
+  .nextVideos h4 {
+    color: #AFAFAF;
+    font-weight: 550;
+    margin-bottom: 4%;
+  }
+  .nextVideos .nextVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 350px;
+    padding-bottom: 1%;
+    text-decoration: none;
+  }
+  .nextVideos .nextVideo img {
+    width: 140px;
+    height: 85px;
+    border-radius: 5px;
+  }
+  .nextVideos .nextVideo .nextVideo__info {
+    margin-left: 5%;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__title {
+    color: #323232;
+    padding: 0;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__channel {
+    color: #323232;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .nextVideos {
+    margin-left: 4%;
+  }
+  .nextVideos h4 {
+    color: #AFAFAF;
+    font-weight: 550;
+    margin-bottom: 4%;
+  }
+  .nextVideos .nextVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    padding-bottom: 1%;
+    text-decoration: none;
+  }
+  .nextVideos .nextVideo img {
+    width: 140px;
+    height: 85px;
+    border-radius: 5px;
+  }
+  .nextVideos .nextVideo .nextVideo__info {
+    margin-left: 5%;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__title {
+    color: #323232;
+    padding: 0;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__channel {
+    color: #323232;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nextVideos {
+    margin-left: 4%;
+  }
+  .nextVideos h4 {
+    color: #AFAFAF;
+    font-weight: 550;
+    margin-bottom: 1%;
+  }
+  .nextVideos .nextVideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 96%;
+    padding-bottom: 0;
+    text-decoration: none;
+  }
+  .nextVideos .nextVideo img {
+    width: 110px;
+    height: 75px;
+    border-radius: 5px;
+  }
+  .nextVideos .nextVideo .nextVideo__info {
+    margin-left: 5%;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__title {
+    color: #323232;
+    padding: 0;
+  }
+  .nextVideos .nextVideo .nextVideo__info .nextVideo__channel {
+    color: #323232;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

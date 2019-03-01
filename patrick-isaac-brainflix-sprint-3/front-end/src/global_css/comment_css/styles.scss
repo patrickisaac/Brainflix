@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/Assets/_Global Font/AvenirNextProLT/");
+}
+
+@import 'variables';
+
+body {
+  font-family: "Avenir Next"
+}
+
+@media (min-width: 1440px) {
+  .comment__section {
+  padding-top: 3%;
+  margin-left: 4%;
+
+  .comment__nums {
+    font-size: 0.7rem;
+    color: $black;
+  }
+
+  .comment__container {
+    margin-left: -1.5%;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+  
+  
+    .comment__picture {
+      margin-top: 6.5%;
+      
+      img {
+        width: 80px;
+        clip-path: circle(35%);
+      }
+    }
+    
+    .comment__form {
+      display: flex;
+      flex-flow: column nowrap;
+      font-size: 14px;
+      font-weight: 550;
+      color: $silver;
+      margin-top: 2%;
+
+      p {
+        margin-bottom: -20px;
+      }
+    
+      .comments {
+        display: flex;
+        align-items: baseline;
+
+        textarea {
+          color: $black;
+          border-radius: 4px;
+          border: 1.5px solid $mercury;
+          padding: 2%;
+          height: 15px;
+          width: 600px;
+          font-family: "Avenir Next";
+          font-size: 16px;
+        }
+    
+        button {
+          font-family: "Avenir Next";
+          background-color: $blue;
+          color: $white;
+          font-weight: bold;
+          font-size: 16px;
+          padding: 16px 30px;
+          border: none;
+          border-radius: 4px;
+          margin-top: 4%;
+          margin-left: 5%;
+        }
+      }  
+
+    }
+  }
+}
+
+
+//COMMENTS
+
+.posted__section { 
+  padding: 4% 0;
+
+  .posted__comments {
+    border-top: 1.2px solid $mercury;
+    border-bottom: 1.2px solid $mercury;
+    padding-bottom: 1%;
+    width: 100%;
+
+    .name__container {
+      display: flex;
+
+      .profile {
+        background: $mercury;
+        border-radius: 50%;
+        width: 80px;
+        height: 45px;
+        margin-bottom: 1%;
+        margin-top: 4%;
+      }
+     
+      .user__info {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        margin-left: 3%;
+
+        .name {
+          color: $black;
+          padding-top: 2%;
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+
+        .date {
+          color: $silver;
+          margin-bottom: 1%;
+          font-size: 0.9rem;
+          margin-left: 3%;
+        }
+
+        .comment {
+          color: $black;
+          margin-top: 0;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .comment__section {
+    padding-top: 3%;
+    margin-left: 4%;
+  
+    .comment__nums {
+      font-size: 0.7rem;
+      color: $black;
+    }
+  
+    .comment__container {
+      margin-left: -1.5%;
+      margin-bottom: 10px;
+      display: flex;
+      width: 100%;
+    
+    
+      .comment__picture {
+        margin-top: 6.5%;
+        
+        img {
+          width: 75px;
+          clip-path: circle(35%);
+        }
+      }
+      
+      .comment__form {
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 14px;
+        font-weight: 550;
+        color: $silver;
+        margin-top: 2%;
+  
+        p {
+          margin-bottom: -20px;
+        }
+      
+        .comments {
+          display: flex;
+          align-items: center;
+  
+          textarea {
+            font-family: "Avenir Next";
+            color: $black;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding: 2%;
+            margin-top: 25px;
+            height: 15px;
+            width: 450px;
+            font-family: "Avenir Next";
+          }
+      
+          button {
+            font-family: "Avenir Next";
+            background-color: $blue;
+            color: $white;
+            font-weight: bold;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 4%;
+            width: 30%;
+            margin-left: 5%;
+          }
+        }  
+  
+      }
+    }
+  }
+  
+  
+  //COMMENTS
+  
+  .posted__section { 
+    padding: 4% 0;
+  
+    .posted__comments {
+      border-top: 1.2px solid $mercury;
+      border-bottom: 1.2px solid $mercury;
+      padding-bottom: 1%;
+      width: 95%;
+  
+      .name__container {
+        display: flex;
+  
+        .profile {
+          background: $mercury;
+          border-radius: 50%;
+          width: 90px;
+          height: 40px;
+          margin-bottom: 1%;
+          margin-top: 4%;
+        }
+       
+        .user__info {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: baseline;
+          margin-left: 3%;
+  
+          .name {
+            color: $black;
+            padding-top: 2%;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 0.9rem;
+          }
+  
+          .date {
+            color: $silver;
+            margin-bottom: 2%;
+            font-size: 0.9rem;
+            margin-left: 3%;
+          }
+  
+          .comment {
+            color: $black;
+            margin-top: 0;
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .comment__section {
+    padding-top: 3%;
+    margin-left: 4%;
+  
+    .comment__nums {
+      font-size: 0.7rem;
+      color: $black;
+    }
+  
+    .comment__container {
+      margin-left: -4%;
+      margin-bottom: 10px;
+      display: flex;
+      width: 100%;
+    
+    
+      .comment__picture {
+        margin-top: 12%;
+        
+        img {
+          width: 75px;
+          clip-path: circle(35%);
+        }
+      }
+      
+      .comment__form {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 14px;
+        font-weight: 550;
+        color: $silver;
+        margin-top: 2%;
+  
+        p {
+          margin-bottom: 5px;
+  
+        }
+      
+        .comments {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: baseline;
+  
+          textarea {
+            font-family: "Avenir Next";
+            color: $black;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding: 15px;
+            width: 80%;
+            height: 40%;
+          }
+      
+          button {
+            font-family: "Avenir Next";
+            background-color: $blue;
+            color: $white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 4%;
+            width: 95%;
+            margin-left: -1px;
+          }
+        }  
+  
+      }
+    }
+  }
+  
+  
+  //COMMENTS
+  
+  .posted__section { 
+    padding: 6% 0;
+  
+    .posted__comments {
+      border-top: 1.2px solid $mercury;
+      border-bottom: 1.2px solid $mercury;
+      padding-bottom: 1%;
+      width: 95%;
+  
+      .name__container {
+        display: flex;
+  
+        .profile {
+          background: $mercury;
+          border-radius: 50%;
+          width: 50px;
+          height: 40px;
+          margin-bottom: 1%;
+          margin-top: 5%;
+        }
+       
+        .user__info {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: baseline;
+          margin-left: 3%;
+          width: 95%;
+  
+          .name {
+            color: $black;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 0.9rem;
+          }
+  
+          .date {
+            color: $silver;
+            margin-bottom: 2%;
+            font-size: 0.9rem;
+            margin-left: 25px;
+          }
+  
+          .comment {
+            color: $black;
+            margin-top: 0;
+            width: 100%;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
