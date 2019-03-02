@@ -2,15 +2,15 @@ import React from 'react'
 import '../global_css/comment_css/styles.css'
 import Comments from './Comments'
 
-let nums = 3
-const numsComment = (nums + " Comments")
+// let nums = 3
+// const numsComment = (nums + " Comments")
 
 class CommentSection extends React.Component {
   render() {
     return (
       <div className="comment__section">
         <div className="comment__nums">
-          <h2>{numsComment}</h2>
+          <h2>{this.props.comments.length} Comments</h2>
         </div>
         <div className="comment__container">
           <div className="comment__picture">

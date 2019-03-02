@@ -6,9 +6,8 @@ import CommentSection from './components/CommentSection'
 import axios from 'axios'
 import './App.css'
 
-const api_key = "4abc64a1-403f-4d37-8ad8-5c49d60737b0"
-const url = `https://project-2-api.herokuapp.com/videos?api_key=${api_key}`
-const mainVideoUrl = id => `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`
+const url = "http://localhost:8080/videos"
+const mainVideoUrl = id => `http://localhost:8080/videos/${id}`
 
 class Home extends Component {
   state = {
@@ -34,15 +33,6 @@ class Home extends Component {
             comments: response.data.comments
           })
         })
-      })
-      .then(response => {
-        axios.get(mainVideoUrl(this.props.match.params.id))
-          .then(response => {
-            this.setState({
-              mainVideo: response.data,
-              comments: response.data.comments
-            })
-          })
       })
   }
 
