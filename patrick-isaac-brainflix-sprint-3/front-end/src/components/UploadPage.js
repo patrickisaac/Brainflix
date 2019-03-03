@@ -8,6 +8,9 @@ const url = "http://localhost:8080/videos"
 class UploadPage extends React.Component {
 
   uploadVideo = () => {
+    if(this.titleInput.value.length < 2 || this.descriptionInput.value.length < 2) {
+      return alert("Please enter title and description")
+    } else {
      axios.post(url, {
        title: this.titleInput.value,
        description: this.descriptionInput.value
@@ -15,8 +18,9 @@ class UploadPage extends React.Component {
       .then(response => {
         this.titleInput.value = ""
         this.descriptionInput.value = ""
+        alert("Video successfully uploaded")
       })
-  }
+  }}
 
   cancelVideo = () => {
     this.titleInput.value = ""
