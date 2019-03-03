@@ -60,7 +60,10 @@ class Home extends Component {
           <CommentSection comments={this.state.comments}/>
           </div>
           <div className="sideVideo__desktop">
-            <SideVideo sideVideos={this.state.sideVideos} currentVidId={this.props.match.params.id}/>
+            <SideVideo 
+              sideVideos={this.state.sideVideos} 
+              currentVidId={this.props.match.params.id}
+            />
           </div>
         </div>
       </div>

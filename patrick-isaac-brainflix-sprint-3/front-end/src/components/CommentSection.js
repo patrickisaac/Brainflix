@@ -2,9 +2,6 @@ import React from 'react'
 import '../global_css/comment_css/styles.css'
 import Comments from './Comments'
 
-// let nums = 3
-// const numsComment = (nums + " Comments")
-
 class CommentSection extends React.Component {
   render() {
     return (
@@ -19,7 +16,12 @@ class CommentSection extends React.Component {
           <form className="comment__form">
             <p>JOIN THE CONVERSATION</p>
             <div className="comments">
-              <textarea id="comment" cols="70" rows="5" placeholder="Write comment here"></textarea>
+              <textarea 
+                id="comment" 
+                cols="70" 
+                rows="5" 
+                placeholder="Write comment here">
+              </textarea>
               <button>COMMENT</button>
             </div>
           </form>

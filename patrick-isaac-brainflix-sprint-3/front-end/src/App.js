@@ -4,7 +4,6 @@ import Nav from './components/Nav'
 import { Route, Switch } from 'react-router-dom'
 import UploadPage from './components/UploadPage'
 import './App.css'
-// import Axios from 'axios';
 
 //USED FOR NAVIGATION COMP.
 const profile = [
