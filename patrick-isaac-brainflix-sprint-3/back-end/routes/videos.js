@@ -48,7 +48,8 @@ router.post('/', (request, response) => {
   videoDetails.push(newVideoDetails)
   fs.writeFileSync('./routes/database/videos.json', JSON.stringify(videos))
   fs.writeFileSync('./routes/database/videoDetails.json', JSON.stringify(videoDetails))
-  response.json("A new video has been uploaded...")
+  
+  response.send("A video was posted...")
 })
 
 module.exports = router
